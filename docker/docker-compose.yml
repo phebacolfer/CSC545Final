@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  oracle_db:
+    image: container-registry.oracle.com/database/free
+    ports:
+      - 1521:1521
+    command: ["tail", "-f", "/dev/null"]
